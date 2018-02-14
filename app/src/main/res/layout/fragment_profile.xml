@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.benjohnson.tootootflickerdemo.fragment.profile.ProfileViewModel" />
+    </data>
+
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d9d9d9"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/profile_header_bg"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_profile_picture"
+                        android:layout_width="@dimen/profile_image"
+                        android:layout_height="@dimen/profile_image"
+                        android:layout_centerInParent="true"
+                        android:elevation="6dp"
+                        android:scaleType="centerCrop"
+                        tools:src="@drawable/ic_fave" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/tv_user_name_margin"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@{viewModel.realName}"
+                    android:textColor="@color/tv_profile_name"
+                    android:textSize="@dimen/tv_user_name"
+                    android:textStyle="bold"
+                    tools:text="Ben Johnson" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@{viewModel.username}"
+                    android:textColor="@color/tv_profile_username"
+                    android:textSize="@dimen/tv_username"
+                    android:textStyle="bold"
+                    tools:text="Ben8Johnson" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

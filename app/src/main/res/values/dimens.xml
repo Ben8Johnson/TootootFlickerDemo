@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="et_search_margin">16dp</dimen>
+    <dimen name="et_search_text">32sp</dimen>
+    <dimen name="et_username_search_text">18sp</dimen>
+    <dimen name="profile_image">75dp</dimen>
+    <dimen name="tv_user_name">16sp</dimen>
+    <dimen name="tv_username">14sp</dimen>
+    <dimen name="tv_user_name_margin">16dp</dimen>
+    <dimen name="tv_faves">16sp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TootootFlickrDemo</string>
+    <string name="et_search_hint">Search</string>
+    <string name="et_username_hint">Enter username to find profile</string>
+
+    <string-array name="fragment_titles">
+        <item>Popular</item>
+        <item>Profile</item>
+        <item>Search</item>
+    </string-array>
+
+</resources>

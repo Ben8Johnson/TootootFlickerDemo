@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_image_title">18sp</dimen>
+    <dimen name="tv_image_stats">16sp</dimen>
+    <dimen name="iv_image_stat_icon">24dp</dimen>
+</resources>
